@@ -1,10 +1,9 @@
 $(document).ready(main);
 
-var contador=1;
+var contador = 1;
 
-function main(){
-    $('.menu-mobile').click(function(){
-        $('nav')
-
-    });
+function main() {
+  $(".menu-mobile").click(function () {
+    $("nav");
+  });
 }

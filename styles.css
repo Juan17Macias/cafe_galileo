@@ -29,7 +29,12 @@ h2 {
 }
 
 /*Objetos que solo deben aparecer en el menu mobile*/
-.icon-menu, .close, .logo-empresa-taza, .cafe-galileo-sm, .menu-mobile, .nav-left-sm  {
+.icon-menu,
+.close,
+.logo-empresa-taza,
+.cafe-galileo-sm,
+.menu-mobile,
+.nav-left-sm {
   display: none;
 }
 
@@ -160,19 +165,16 @@ h2 {
 
 .prev-button {
   left: 0;
- }
+}
 
 .next-button {
   right: 0;
 }
 
-
 /* ---------------------------------- ESTILOS DE CARDS DE PRODUCTOS --------------------------------------*/
 
-
-.cards-container figure{
+.cards-container figure {
   display: none;
-
 }
 
 .titulo-productos {
@@ -191,7 +193,7 @@ h2 {
   width: 240px;
   border-radius: 10px;
   background-color: #fff;
- }
+}
 
 .cards-product img {
   width: 100%;
@@ -262,7 +264,7 @@ h2 {
 
 /*Ventana Pop Up detalles producto */
 
-.modal::backdrop{
+.modal::backdrop {
   background-color: rgba(68, 13, 13, 0.466);
 }
 .modal {
@@ -272,7 +274,7 @@ h2 {
   height: 75vh;
 }
 
-.cerrar-pop-up{
+.cerrar-pop-up {
   background-color: rgba(248, 250, 250, 0.76);
   margin-left: 97%;
   border-radius: 50%;
@@ -284,11 +286,11 @@ h2 {
   border: 0;
   color: rgb(19, 56, 14);
 }
-.cerrar-pop-up:hover{
-  box-shadow:0 0 20px rgb(12, 44, 18);
+.cerrar-pop-up:hover {
+  box-shadow: 0 0 20px rgb(12, 44, 18);
   padding: 0;
   border: 0;
-  color:rgb(245, 243, 243);
+  color: rgb(245, 243, 243);
   cursor: pointer;
 }
 .card-detalles {
@@ -299,7 +301,7 @@ h2 {
   background: transparent;
   border-radius: 2%;
   justify-content: center;
-  overflow:hidden;
+  overflow: hidden;
 }
 .card-detalles img {
   min-width: 25%;
@@ -310,13 +312,13 @@ h2 {
 }
 
 .card-detalles img:hover {
-    box-shadow: 0 0 15px rgba(235, 137, 137, 0.719);
-    cursor: pointer;
+  box-shadow: 0 0 15px rgba(235, 137, 137, 0.719);
+  cursor: pointer;
 }
 
-.detalles{
-    margin-left: 2%;
-    padding: 0 2% 0 2%;
+.detalles {
+  margin-left: 2%;
+  padding: 0 2% 0 2%;
 }
 .detalles h1,
 h2 {
@@ -326,34 +328,32 @@ h2 {
   margin-bottom: 1%;
   color: aliceblue;
 }
-.detalles h2{
-    margin-top: 2%;
+.detalles h2 {
+  margin-top: 2%;
 }
-.button-modal{
+.button-modal {
   display: flex;
   justify-content: center;
-
 }
-.button-presentacion{
-width: 60px;
-height: 40px;
-cursor: pointer;
-border: none;
-border-radius: 12%;
-margin-left: 3%;
-margin-bottom: 4%;
-background: rgb(209, 99, 117);
-color: white;
-font-style: italic;
-font-weight: bold;
-font-size: 80%;
+.button-presentacion {
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12%;
+  margin-left: 3%;
+  margin-bottom: 4%;
+  background: rgb(209, 99, 117);
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 80%;
 }
 
-.button-presentacion:hover{
-    color: black;
-    box-shadow: 0 0 8px rgb(226, 223, 223);
-    background: rgb(199, 50, 74);
-
+.button-presentacion:hover {
+  color: black;
+  box-shadow: 0 0 8px rgb(226, 223, 223);
+  background: rgb(199, 50, 74);
 }
 
 .table-detalles {
@@ -372,8 +372,8 @@ font-size: 80%;
   border-radius: 2%;
   font-style: oblique;
 }
-.table-detalles th{
-    width: 30%;/* Version Mmovil ---para escritorio DISMINUIR */
+.table-detalles th {
+  width: 30%; /* Version Mmovil ---para escritorio DISMINUIR */
 }
 
 @media (max-width: 640px) {
@@ -482,8 +482,6 @@ font-size: 80%;
   font-size: 16px;
   border-radius: 8px;
 }
-
-
 .u-input {
   background: transparent;
   width: 90%;
@@ -560,4 +558,3 @@ footer a img:hover {
   margin-top: 15px;
   display: block;
 }
-

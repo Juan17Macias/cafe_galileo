@@ -64,7 +64,6 @@
     display: none;
     margin-top: 3vh;
     margin-left: -1vw;
-
   }
 
   .menu-mobile ul {
@@ -96,30 +95,29 @@ el hover al enlace y luego la clase de la img*/
   }
 
   /*Seccion de Slider */
-.slider-images {
-      display: flex;
-      width: 80vw;
-      height: 40vh;
-    }
-
+  .slider-images {
+    display: flex;
+    width: 80vw;
+    height: 40vh;
+  }
 
   /*Seccion de Cards*/
 
-  .cards-container button{
+  .cards-container button {
     display: block;
   }
- 
-.button-prymary{
+
+  .button-prymary {
     width: 28vw;
   }
-  .description-product, .precio{
+  .description-product,
+  .precio {
     text-align: center;
   }
 
-
   /* Section pop Up */
 
-  .modal::backdrop{
+  .modal::backdrop {
     background-color: rgba(231, 218, 212, 0.664);
   }
   .modal {
@@ -129,7 +127,7 @@ el hover al enlace y luego la clase de la img*/
     max-width: 95ch;
   }
 
-  .cerrar-pop-up{
+  .cerrar-pop-up {
     background-color: rgba(250, 252, 252, 0.445);
     margin-left: 92%;
     width: 30px;
@@ -137,10 +135,10 @@ el hover al enlace y luego la clase de la img*/
     font-size: 20px;
     color: rgb(245, 242, 242);
   }
-  
-   .cerrar-pop-up:hover{
-    box-shadow:0 0 20px rgb(219, 45, 153);
-    color:rgb(219, 45, 153);
+
+  .cerrar-pop-up:hover {
+    box-shadow: 0 0 20px rgb(219, 45, 153);
+    color: rgb(219, 45, 153);
   }
   .card-detalles {
     width: 90vw;
@@ -152,14 +150,14 @@ el hover al enlace y luego la clase de la img*/
     height: 60%;
     margin-left: 2%;
   }
-  
+
   .card-detalles img:hover {
-      box-shadow: 0 0 15px rgba(235, 137, 137, 0.719);
+    box-shadow: 0 0 15px rgba(235, 137, 137, 0.719);
   }
-  
-  .detalles{
-      margin-left: 2%;
-      padding: 2%;
+
+  .detalles {
+    margin-left: 2%;
+    padding: 2%;
   }
   .detalles h1,
   h2 {
@@ -169,27 +167,26 @@ el hover al enlace y luego la clase de la img*/
     margin-bottom: 1%;
     color: aliceblue;
   }
-  .detalles h2{
-      margin-top: 5%;
+  .detalles h2 {
+    margin-top: 5%;
   }
-  
-  .button-presentacion{
-  width: 60px;
-  height: 40px;
-  margin-left: 3%;
-  margin-bottom: 4%;
-  background: rgb(209, 99, 117);
-  color: white;
-  font-size: 80%;
+
+  .button-presentacion {
+    width: 60px;
+    height: 40px;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    background: rgb(209, 99, 117);
+    color: white;
+    font-size: 80%;
   }
-  
-  .button-presentacion:hover{
-      color: black;
-      box-shadow: 0 0 8px rgb(226, 223, 223);
-      background: rgb(199, 50, 74);
-  
+
+  .button-presentacion:hover {
+    color: black;
+    box-shadow: 0 0 8px rgb(226, 223, 223);
+    background: rgb(199, 50, 74);
   }
-    
+
   .table-detalles {
     background: rgba(248, 236, 236, 0.527);
     text-align: left;
@@ -205,16 +202,9 @@ el hover al enlace y luego la clase de la img*/
     word-wrap: break-word;
     border-radius: 2%;
   }
-  .table-detalles th{
-      width: 40%;/* Version Mmovil ---para escritorio DISMINUIR */
+  .table-detalles th {
+    width: 40%; /* Version Mmovil ---para escritorio DISMINUIR */
   }
-
-
-
-
-
-
-
 
   /*Seccion familia*/
   .container-familia {
@@ -231,15 +221,11 @@ el hover al enlace y luego la clase de la img*/
     max-width: 80vw;
   }
 
-
-  
-
   /*Seccion contacto */
 
   .form-contacto {
     background-image: url(./img/fon-4.jpg);
     background-position: right;
-
   }
   .contacto {
     display: flex;
@@ -310,14 +296,14 @@ el hover al enlace y luego la clase de la img*/
     border-bottom: 2px solid rgb(248, 245, 245);
   }
 
-  .contacto p:nth-child(2){
+  .contacto p:nth-child(2) {
     width: 60vw;
     text-align: center;
-    margin-left:7%;
+    margin-left: 7%;
   }
 
   /*Footer*/
-  footer{
+  footer {
     background: rgb(230, 238, 229);
     height: 10vh;
   }
