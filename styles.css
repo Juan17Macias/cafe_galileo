@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  padding: 0 5px 5px 5px;
-  background: rgba(250, 249, 249, 0.788);
   color: rgb(65, 30, 6);
 }
 
@@ -13,13 +11,14 @@ body {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: 0 24px;
   height: 70px;
   border-bottom: 1px solid rgb(222, 233, 222);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: rgb(35, 73, 18);
+  width: 100%;
+  z-index: 1000;
 }
 
 h1,
@@ -29,8 +28,8 @@ h2 {
   font-size: bold;
 }
 
-
-.icon-menu {
+/*Objetos que solo deben aparecer en el menu mobile*/
+.icon-menu, .close, .logo-empresa-taza, .cafe-galileo-sm, .menu-mobile, .nav-left-sm  {
   display: none;
 }
 
@@ -52,17 +51,12 @@ h2 {
   object-fit: fill;
   margin-top: 16px;
 }
-.logo-empresa-taza {
-  width: 70px;
-  height: 40px;
-  object-fit: fill;
-  display: none;
-  margin-left: 8px;
-  margin-top: 14px;
-}
+
 .nav-left {
   display: flex;
+  width: 10%;
 }
+
 .nav-left ul {
   margin-left: 0px;
 }
@@ -101,17 +95,18 @@ h2 {
 .navbar-email {
   color: rgb(250, 249, 249);
   font-style: oblique;
-  margin-right: 15px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
 }
 .navbar-icon-card {
   position: relative;
+  margin-right: 7px;
 }
 .navbar-icon-card div {
   width: 15px;
   height: 15px;
-  background-color: rgb(164, 230, 164);
+  background-color: rgb(162, 219, 5);
   border-radius: 50%;
   font-size: 12px;
   position: absolute;
@@ -121,54 +116,64 @@ h2 {
   justify-content: center;
   align-items: center;
   color: white;
-}
-@media (max-width: 640px) {
-  .icon-menu {
-    display: block;
-  }
-  .logo-empresa-letra {
-    display: none;
-  }
-  .logo-empresa-taza {
-    display: block;
-  }
-  .nav-left ul {
-    display: none;
-  }
-  .navbar-email {
-    display: none;
-  }
+  font-weight: bold;
 }
 
 /*----------------- Estilos slider ---------------------*/
 
-.container-slider {
-  background-image: url(img/slider/1.jpg);
-  background-size: 100% 100%;
-  width: 90vw;
-  height: 85vh;
-  border-radius: 10px;
-  animation: slide 15s infinite linear;
-  margin: auto;
-  margin-top: 10px;
+.slider-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
 }
 
-@keyframes slide {
-  25% {
-    background-image: url(./img/slider/1.jpg);
-  }
-  50% {
-    background-image: url(./img/slider/5.jpg);
-  }
-  75% {
-    background-image: url(./img/slider/6.jpg);
-  }
-  100% {
-    background-image: url(./img/slider/2.jpg);
-  }
+.slider-images {
+  display: flex;
+  width: 80vw;
+  height: 70vh;
 }
+
+.slider-images img {
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 5px;
+}
+
+.slider-images img:first-child {
+  display: block;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.prev-button {
+  left: 0;
+ }
+
+.next-button {
+  right: 0;
+}
+
 
 /* ---------------------------------- ESTILOS DE CARDS DE PRODUCTOS --------------------------------------*/
+
+
+.cards-container figure{
+  display: none;
+
+}
 
 .titulo-productos {
   text-align: center;
@@ -185,7 +190,8 @@ h2 {
 .cards-product {
   width: 240px;
   border-radius: 10px;
-}
+  background-color: #fff;
+ }
 
 .cards-product img {
   width: 100%;
@@ -204,13 +210,14 @@ h2 {
   margin-top: 8px;
 }
 .precio {
+  font-family: font_galileo;
   margin-top: 0;
+  text-align: center;
   cursor: pointer;
 }
 
 .ficha-tecnica {
   width: 210px;
-  height: 114px;
   overflow: hidden;
   text-align: left;
   font-size: 14px;
@@ -234,10 +241,12 @@ h2 {
   margin-bottom: 3px;
 }
 .info-product p:nth-child(2) {
-  font-size: 15px;
+  font-size: 18px;
   color: rgb(175, 116, 26);
   margin-top: 0;
   margin-bottom: 0;
+  font-family: font_galileo;
+  text-align: center;
 }
 .button-prymary {
   background-color: rgb(35, 73, 18);
@@ -248,6 +257,123 @@ h2 {
   color: white;
   font-weight: bold;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+/*Ventana Pop Up detalles producto */
+
+.modal::backdrop{
+  background-color: rgba(68, 13, 13, 0.466);
+}
+.modal {
+  border: 0;
+  background-color: rgba(112, 104, 104, 0.911);
+  border-radius: 10px;
+  height: 75vh;
+}
+
+.cerrar-pop-up{
+  background-color: rgba(248, 250, 250, 0.76);
+  margin-left: 97%;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 23px;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  color: rgb(19, 56, 14);
+}
+.cerrar-pop-up:hover{
+  box-shadow:0 0 20px rgb(12, 44, 18);
+  padding: 0;
+  border: 0;
+  color:rgb(245, 243, 243);
+  cursor: pointer;
+}
+.card-detalles {
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  height: 65vh;
+  background: transparent;
+  border-radius: 2%;
+  justify-content: center;
+  overflow:hidden;
+}
+.card-detalles img {
+  min-width: 25%;
+  width: 60%;
+  height: 90%;
+  border-radius: 16px;
+  margin-left: 2%;
+}
+
+.card-detalles img:hover {
+    box-shadow: 0 0 15px rgba(235, 137, 137, 0.719);
+    cursor: pointer;
+}
+
+.detalles{
+    margin-left: 2%;
+    padding: 0 2% 0 2%;
+}
+.detalles h1,
+h2 {
+  font-style: oblique;
+  text-align: center;
+  margin: 1%;
+  margin-bottom: 1%;
+  color: aliceblue;
+}
+.detalles h2{
+    margin-top: 2%;
+}
+.button-modal{
+  display: flex;
+  justify-content: center;
+
+}
+.button-presentacion{
+width: 60px;
+height: 40px;
+cursor: pointer;
+border: none;
+border-radius: 12%;
+margin-left: 3%;
+margin-bottom: 4%;
+background: rgb(209, 99, 117);
+color: white;
+font-style: italic;
+font-weight: bold;
+font-size: 80%;
+}
+
+.button-presentacion:hover{
+    color: black;
+    box-shadow: 0 0 8px rgb(226, 223, 223);
+    background: rgb(199, 50, 74);
+
+}
+
+.table-detalles {
+  margin: auto;
+  background: transparent;
+  font-size: 2vw;
+  text-align: left;
+  border-radius: 2%;
+  width: 65%;
+  table-layout: fixed; /*Esta propiedad junto a word-wrap 
+  en el conteedor ayuda a que se ajuste al contenido y no desaparezca*/
+}
+.table-detalles td {
+  max-width: 100%;
+  word-wrap: break-word;
+  border-radius: 2%;
+  font-style: oblique;
+}
+.table-detalles th{
+    width: 30%;/* Version Mmovil ---para escritorio DISMINUIR */
 }
 
 @media (max-width: 640px) {
@@ -280,11 +406,9 @@ h2 {
 }
 
 .container-empresa {
-  width: 70%;
-  height: 45vh;
+  height: auto;
   margin-top: 35px;
   border-top: 1px solid rgb(201, 197, 197);
-  width: auto;
   padding: 10px;
   margin-bottom: 15px;
   background-color: rgba(218, 243, 78, 0.5);
@@ -336,7 +460,6 @@ h2 {
 .form-contacto {
   background-image: url(img/fondo-c2.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 100% cover;
   margin: 0;
   padding: 0;
@@ -344,21 +467,22 @@ h2 {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 95vh;
+  height: 90vh;
 }
 .contacto {
   margin-top: 90px;
   margin-right: 5%;
   background: rgba(224, 223, 223, 0.644);
-  width: 450px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: bold;
   color: rgb(5, 5, 5);
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 8px;
 }
+
 
 .u-input {
   background: transparent;
@@ -366,13 +490,14 @@ h2 {
   color: white;
   border-radius: 4px;
   font-size: 15px;
+  margin-bottom: 15px;
   border-bottom: 2px solid rgb(248, 245, 245);
 }
 .label-form {
   padding: 15px;
 }
 .contacto-enviar {
-  background: rgb(236, 95, 1);
+  background: rgb(38, 80, 18);
   width: 85%;
   border: 1px solid white;
   cursor: pointer;
@@ -390,7 +515,7 @@ footer {
   background: rgba(15, 15, 15, 0.904);
   border-top: 1px solid rgb(14, 14, 14);
   width: 100%;
-  height: 100px;
+  height: 15vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -413,9 +538,10 @@ footer a img:hover {
 }
 
 .redes a {
-  width: 100%;
+  width: 2rem;
   color: rgb(238, 245, 219);
   text-decoration: none;
+  width: auto;
 }
 .dev-juan {
   color: white;
@@ -431,4 +557,7 @@ footer a img:hover {
   height: 80px;
   border-radius: 10px;
   padding: 0 5px 0 0;
+  margin-top: 15px;
+  display: block;
 }
+

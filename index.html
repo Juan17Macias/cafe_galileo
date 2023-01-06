@@ -1,31 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
 
+    <!--media querys responsive site-->
+    <link rel="stylesheet" href="responsive.css" />
+
     <title>Cafe galileo</title>
   </head>
   <body>
     <nav class="nav-bar">
-      <img src="./icons/menu.svg" class="icon-menu" alt="" />
+      <button id="menu-button" class="icon-menu">
+        <img src="./icons/menu.svg" class="menu" /><img
+          src="./icons/icons/x.svg"
+          class="close"
+          alt=""
+        />
+          <nav class="menu-mobile">
+            <ul>
+              <li>
+                <a href="" class="enlaces-m"
+                  >Inicio
+                  <img
+                    src="./img/mobil/grano-cafe1.png"
+                    class="g-cafe-sm"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#tittle-productos" class="enlaces-m"
+                  >Productos
+                  <img
+                    src="./img/mobil/grano-cafe2.png"
+                    class="g-cafe-sm"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#tittle-empresa" class="enlaces-m"
+                  >Empresa
+                  <img
+                    src="./img/mobil/grano-cafe3.png"
+                    class="g-cafe-sm"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#tittle-familia" class="enlaces-m"
+                  >Familia
+                  <img
+                    src="./img/mobil/grano-cafe4.png"
+                    class="g-cafe-sm"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#form-contacto" class="enlaces-m"
+                  >Contacto
+                  <img
+                    src="./img/mobil/grano-cafe5.png"
+                    class="g-cafe-sm"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+            </button>
+
       <div class="nav-left">
         <h1 class="logo-galileo">Galileo</h1>
-        <!--<img
-          src="./img/logo-l.png"
-          alt="logo empresa"
-          class="logo-empresa-letra"
-        />-->
-        <img src="./img/logo-taza.png" class="logo-empresa-taza" alt="" />
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Productos</a></li>
-          <li><a href="">Empresa</a></li>
-          <li><a href="">Familia</a></li>
-          <li><a href="">Contacto</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#tittle-productos">Productos</a></li>
+          <li><a href="#tittle-empresa">Empresa</a></li>
+          <li><a href="#tittle-familia">Familia</a></li>
+          <li><a href="#form-contacto">Contacto</a></li>
         </ul>
+      </div>
+
+      <!--MENU MOBIL RESPONSIVE -->
+      <div class="nav-left-sm">
+        <a href="" class="cafe-galileo-sm"
+          ><img
+            src="./img/logo-taza-sf.png"
+            class="logo-empresa-taza-sm"
+            alt=""
+          />
+          Café Galileo</a
+        >
       </div>
 
       <div class="nav-right">
@@ -41,35 +106,43 @@
         </ul>
       </div>
     </nav>
+
+
     <section class="slider">
-      <div class="container-slider"></div>
+      <div class="slider-container">
+        <div class="slider-images">
+          <img src="./img/slider/3.jpg" alt="Imagen 1">
+          <img src="./img/slider/2.jpg" alt="Imagen 2">
+          <img src="./img/slider/1.jpg" alt="Imagen 3">
+        </div>        
+        <button class="prev-button">&lt;</button>
+        <button class="next-button">&gt;</button>
+      </div>
+      
     </section>
 
     <!--------------CLASE DEL MENU DE LOS PRODUCTOS -->
 
-    <h1 class="tittle-productos">
+    <h1 class="tittle-productos" id="tittle-productos">
       ...:::Productos Café Galileo:::...
       <hr />
     </h1>
 
     <div class="cards-container">
       <div class="cards-product">
-        <img src="./img/taza.jpg" alt="cafe producto" class="img-product" />
+        <img src="./icons/img/productos/tradicional/f1.jfif" alt="cafe producto" class="img-product" />
         <div class="info-product">
           <div>
-            <p class="precio">$ 30000</p>
-            <p class="description-product">Café Variedad Rosado</p>
+            <p class="precio">$ 30.000</p>
+            <p class="description-product">Tradicional</p>
             <p class="ficha-tecnica">
-              Empaque: sacos de yute. <br />
-              Peso: 45 Kg/saco. <br />
-              Almacenamiento: 18-25°C, 60-75%H.R. <br />
-              CARACTERISTICAS Olor: característico libre de olores extraños
+              Presentación: 250gr/ 500gr/ 1 kg. <br />
+              Empaque: Bolsa  <br />
+              Almacenamiento: 18-25°C <br />
+              Olor: característico libre de olores extraños
               ajenos al producto. <br />
-              Limpieza: grano limpio sin restos de mucilago, tierra, partes de
-              cascara de material u otro material <br />
-              COMERCIALES DEL extraño.
             </p>
-            <button class="button-prymary">Conocer Más</button>
+            <button class="button-prymary" id="abrir-pop-up">Más Detalles</button>
           </div>
           <figure class="shop-cart-shop">
             <img src="./icons/shopping-cart.svg" alt="" />
@@ -77,22 +150,40 @@
         </div>
       </div>
       <div class="cards-product">
-        <img src="./img/taza.jpg" alt="cafe producto" class="img-product" />
+        <img src="./icons/img/productos/honey/h1.jfif" alt="cafe producto" class="img-product" />
         <div class="info-product">
           <div>
-            <p class="precio">$ 30000</p>
-            <p class="description-product">Café Variedad Rosado</p>
+            <p class="precio">$ 30.000</p>
+            <p class="description-product">Honey</p>
             <p class="ficha-tecnica">
-              Empaque: sacos de yute. <br />
-              Peso: 45 Kg/saco. <br />
-              Almacenamiento: 18-25°C, 60-75%H.R. <br />
-              CARACTERISTICAS Olor: característico libre de olores extraños
+              Presentación: 250gr/ 500gr/ 1 kg. <br />
+              Empaque: Bolsa  <br />
+              Almacenamiento: 18-25°C <br />
+              Olor: característico libre de olores extraños
               ajenos al producto. <br />
-              Limpieza: grano limpio sin restos de mucilago, tierra, partes de
-              cascara de material u otro material <br />
-              COMERCIALES DEL extraño.
             </p>
-            <button class="button-prymary">Conocer Más</button>
+            <button class="button-prymary" id="abrir-pop-up2">Más Detalles</button>
+          </div>
+          <figure class="shop-cart-shop">
+            <img src="./icons/shopping-cart.svg" alt="" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="cards-product">
+        <img src="./icons/img/productos/lavados/f1.jfif" alt="cafe producto" class="img-product" />
+        <div class="info-product">
+          <div>
+            <p class="precio">$ 30.000</p>
+            <p class="description-product">Lavados</p>
+            <p class="ficha-tecnica">
+              Presentación: 250gr/ 500gr/ 1 kg. <br />
+              Empaque: Bolsa  <br />
+              Almacenamiento: 18-25°C <br />
+              Olor: característico libre de olores extraños
+              ajenos al producto. <br />
+            </p>
+            <button class="button-prymary" id="abrir-pop-up3">Más Detalles</button>
           </div>
           <figure class="shop-cart-shop">
             <img src="./icons/shopping-cart.svg" alt="" />
@@ -100,22 +191,40 @@
         </div>
       </div>
       <div class="cards-product">
-        <img src="./img/taza.jpg" alt="cafe producto" class="img-product" />
+        <img src="./icons/img/productos/anaerobicos/f1.jpg" alt="cafe producto" class="img-product" />
         <div class="info-product">
           <div>
-            <p class="precio">$ 30000</p>
-            <p class="description-product">Café Variedad Rosado</p>
+            <p class="precio">$ 30.000</p>
+            <p class="description-product">Anaeróbicos</p>
             <p class="ficha-tecnica">
-              Empaque: sacos de yute. <br />
-              Peso: 45 Kg/saco. <br />
-              Almacenamiento: 18-25°C, 60-75%H.R. <br />
-              CARACTERISTICAS Olor: característico libre de olores extraños
+              Presentación: 250gr/ 500gr/ 1 kg. <br />
+              Empaque: Bolsa  <br />
+              Almacenamiento: 18-25°C <br />
+              Olor: característico libre de olores extraños
               ajenos al producto. <br />
-              Limpieza: grano limpio sin restos de mucilago, tierra, partes de
-              cascara de material u otro material <br />
-              COMERCIALES DEL extraño.
             </p>
-            <button class="button-prymary">Conocer Más</button>
+            <button class="button-prymary" id="abrir-pop-up4">Más Detalles</button>
+          </div>
+          <figure class="shop-cart-shop">
+            <img src="./icons/shopping-cart.svg" alt="" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="cards-product">
+        <img src="./icons/img/productos/geisha/f1.jfif" alt="cafe producto" class="img-product" />
+        <div class="info-product">
+          <div>
+            <p class="precio">$ 30.000</p>
+            <p class="description-product">Geisha</p>
+            <p class="ficha-tecnica">
+              Presentación: 250gr/ 500gr/ 1 kg. <br />
+              Empaque: Bolsa  <br />
+              Almacenamiento: 18-25°C <br />
+              Olor: característico libre de olores extraños
+              ajenos al producto. <br />
+            </p>
+            <button class="button-prymary" id="abrir-pop-up5">Más Detalles</button>
           </div>
           <figure class="shop-cart-shop">
             <img src="./icons/shopping-cart.svg" alt="" />
@@ -123,34 +232,369 @@
         </div>
       </div>
       <div class="cards-product">
-        <img src="./img/taza.jpg" alt="cafe producto" class="img-product" />
+        <img src="./icons/img/productos/bourbon/f1.jfif" alt="cafe producto" class="img-product" />
         <div class="info-product">
           <div>
-            <p class="precio">$ 30000</p>
-            <p class="description-product">Café Variedad Rosado</p>
+            <p class="precio">$ 30.000</p>
+            <p class="description-product">Bourbon Rosado</p>
             <p class="ficha-tecnica">
-              Empaque: sacos de yute. <br />
-              Peso: 45 Kg/saco. <br />
-              Almacenamiento: 18-25°C, 60-75%H.R. <br />
-              CARACTERISTICAS Olor: característico libre de olores extraños
+              Presentación: 250gr/ 500gr/ 1 kg. <br />
+              Empaque: Bolsa  <br />
+              Almacenamiento: 18-25°C <br />
+              Olor: característico libre de olores extraños
               ajenos al producto. <br />
-              Limpieza: grano limpio sin restos de mucilago, tierra, partes de
-              cascara de material u otro material <br />
-              COMERCIALES DEL extraño.
             </p>
-            <button class="button-prymary">Conocer Más</button>
+            <button class="button-prymary" id="abrir-pop-up6">Más Detalles</button>
           </div>
           <figure class="shop-cart-shop">
             <img src="./icons/shopping-cart.svg" alt="" />
           </figure>
+        </div>
+      </div>
+
+      <div class="cards-product">
+        <img src="./icons/img/productos/especial1/f1.jfif" alt="cafe producto" class="img-product" />
+        <div class="info-product">
+          <div>
+            <p class="precio">$ 30.000</p>
+            <p class="description-product">Especial 1</p>
+            <p class="ficha-tecnica">
+              Presentación: 250gr/ 500gr/ 1 kg. <br />
+              Empaque: Bolsa  <br />
+              Almacenamiento: 18-25°C <br />
+              Olor: característico libre de olores extraños
+              ajenos al producto. <br />
+            </p>
+            <button class="button-prymary" id="abrir-pop-up7">Más Detalles</button>
+          </div>
+          <figure class="shop-cart-shop">
+            <img src="./icons/shopping-cart.svg" alt="" />
+          </figure>
+        </div>
+      </div>
+      <div class="cards-product">
+        <img src="./icons/img/productos/especial2/f1.jpg" alt="cafe producto" class="img-product" />
+        <div class="info-product">
+          <div>
+            <p class="precio">$ 30.000</p>
+            <p class="description-product">Especial 2</p>
+            <p class="ficha-tecnica">
+              Presentación: 250gr/ 500gr/ 1 kg. <br />
+              Empaque: Bolsa  <br />
+              Almacenamiento: 18-25°C <br />
+              Olor: característico libre de olores extraños
+              ajenos al producto. <br />
+            </p>
+            <button class="button-prymary" id="abrir-pop-up8">Más Detalles</button>
+          </div>
+          <figure class="shop-cart-shop">
+            <img src="./icons/shopping-cart.svg" alt="" />
+          </figure>
+        </div>
+      </div>
+      
+    </div>
+
+    <!------------------------------------Sección pop-up detalles Producto -------------------->
+  <dialog id="modal" class="modal">
+      <button id="cerrar-pop-up" class="cerrar-pop-up">X</button>
+      <div class="card-detalles">
+        <img id="image1" src="./icons/img/productos/tradicional/f1.jfif" alt="" />
+
+        <div class="detalles">
+          <h1>Tradicional</h1>
+
+          <h2>Presentación</h2>
+          <div class="button-modal">
+          <button class="button-presentacion" id="tradicional1">250Gr</button>
+          <button class="button-presentacion" id="tradicional2">1 L</button>
+          <button class="button-presentacion" id="tradicional3">1 Kg</button>
+          </div>
+          
+          <table  class="table-detalles">
+                       <tr>
+              <th >Peso:</th>
+              <td id="tradicional_peso">250 Gr</td>
+              </tr>
+              <tr>
+              <th>Variedad:</th>
+              <td>Cafe Tradicional</td>
+            </tr>
+              <th>Sabor:</th> 
+              <td>Sabor Unico y Dulce</td>
+            </tr>
+            <th>Olor</th>
+            <td>Suave</td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
+   </dialog>
 
+  <dialog id="modal2" class="modal">
+    <button id="cerrar-pop-up2" class="cerrar-pop-up">X</button>
+    <div class="card-detalles">
+      <img id="image2" src="./icons/img/productos/honey/h1.jfif" alt="" />
+
+      <div class="detalles">
+        <h1>Honey</h1>
+
+        <h2>Presentación</h2>
+        <div class="button-modal">
+        <button class="button-presentacion" id="honey1">250Gr</button>
+        <button class="button-presentacion" id="honey2">1 L</button>
+        <button class="button-presentacion" id="honey3">1 Kg</button>
+      </div>
+        
+        <table  class="table-detalles">
+        
+                   <tr>
+            <th >Peso:</th>
+            <td id="honey_peso">250 Gr</td>
+            </tr>
+            <tr>
+            <th>Variedad:</th>
+            <td>Cafe Honey</td>
+          </tr>
+            <th>Sabor:</th> 
+            <td>Sabor Unico y Dulce</td>
+          </tr>
+          <th>Olor</th>
+          <td>Suave</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </dialog>
+
+  <dialog id="modal3" class="modal">
+    <button id="cerrar-pop-up3" class="cerrar-pop-up">X</button>
+    <div class="card-detalles">
+      <img id="image3" src="./icons/img/productos/lavados/f1.jfif" alt="" />
+
+      <div class="detalles">
+        <h1>Lavados</h1>
+
+        <h2>Presentación</h2>
+        <div class="button-modal">
+        <button class="button-presentacion" id="lavados1">250Gr</button>
+        <button class="button-presentacion" id="lavados2">1 L</button>
+        <button class="button-presentacion" id="lavados3">1 Kg</button>
+      </div>
+        
+        <table  class="table-detalles">
+          
+                   <tr>
+            <th >Peso:</th>
+            <td id="lavados_peso">250 Gr</td>
+            </tr>
+            <tr>
+            <th>Variedad:</th>
+            <td>Cafe Lavados</td>
+          </tr>
+            <th>Sabor:</th> 
+            <td>Sabor Unico y Dulce</td>
+          </tr>
+          <th>Olor</th>
+          <td>Suave</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+ </dialog>
+
+<dialog id="modal4" class="modal">
+  <button id="cerrar-pop-up4" class="cerrar-pop-up">X</button>
+  <div class="card-detalles">
+    <img id="image4" src="./icons/img/productos/anaerobicos/f1.jpg" alt="" />
+
+    <div class="detalles">
+      <h1>Anaeróbicos</h1>
+
+      <h2>Presentación</h2>
+      <div class="button-modal">
+      <button class="button-presentacion" id="anaerobicos1">250Gr</button>
+      <button class="button-presentacion" id="anaerobicos2">1 L</button>
+      <button class="button-presentacion" id="anaerobicos3">1 Kg</button>
+    </div>
+      
+      <table  class="table-detalles">
+        
+               <tr>
+          <th >Peso:</th>
+          <td id="anaerobicos_peso">250 Gr</td>
+          </tr>
+          <tr>
+          <th>Variedad:</th>
+          <td>Cafe Anaeróbicos</td>
+        </tr>
+          <th>Sabor:</th> 
+          <td>Sabor Unico y Dulce</td>
+        </tr>
+        <th>Olor</th>
+        <td>Suave</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</dialog>
+
+<dialog id="modal5" class="modal">
+  <button id="cerrar-pop-up5" class="cerrar-pop-up">X</button>
+  <div class="card-detalles">
+    <img id="image5" src="./icons/img/productos/geisha/f1.jfif" alt="" />
+
+    <div class="detalles">
+      <h1>Geisha</h1>
+
+      <h2>Presentación</h2>
+
+      <div class="button-modal">
+      <button class="button-presentacion" id="geisha1">250Gr</button>
+      <button class="button-presentacion" id="geisha2">1 L</button>
+      <button class="button-presentacion" id="geisha3">1 Kg</button>
+    </div>
+      
+      <table  class="table-detalles">
+               <tr>
+          <th >Peso:</th>
+          <td id="geisha_peso">250 Gr</td>
+          </tr>
+          <tr>
+          <th>Variedad:</th>
+          <td>Cafe Geisha</td>
+        </tr>
+          <th>Sabor:</th> 
+          <td>Sabor Unico y Dulce</td>
+        </tr>
+        <th>Olor</th>
+        <td>Suave</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</dialog>
+
+<dialog id="modal6" class="modal">
+<button id="cerrar-pop-up6" class="cerrar-pop-up">X</button>
+<div class="card-detalles">
+  <img id="image6" src="./icons/img/productos/bourbon/f1.jfif" alt="" />
+
+  <div class="detalles">
+    <h1>Rosado</h1>
+
+    <h2>Presentación</h2>
+
+    <div class="button-modal">
+    <button class="button-presentacion" id="bourbon1">250Gr</button>
+    <button class="button-presentacion" id="bourbon2">1 L</button>
+    <button class="button-presentacion" id="bourbon3">1 Kg</button>
+  </div>
+    
+    <table  class="table-detalles">     
+           <tr>
+        <th >Peso:</th>
+        <td id="bourbon_peso">250 Gr</td>
+        </tr>
+        <tr>
+        <th>Variedad:</th>
+        <td>Cafe Borbon Rosado</td>
+      </tr>
+        <th>Sabor:</th> 
+        <td>Sabor Unico y Dulce</td>
+      </tr>
+      <th>Olor</th>
+      <td>Suave</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</dialog>
+
+<dialog id="modal7" class="modal">
+<button id="cerrar-pop-up7" class="cerrar-pop-up">X</button>
+<div class="card-detalles">
+  <img id="image7" src="./icons/img/productos/especial1/f1.jfif" alt="" />
+
+  <div class="detalles">
+    <h1>Especial 1</h1>
+
+    <h2>Presentación</h2>
+    <div class="button-modal">
+    <button class="button-presentacion" id="especial1">250Gr</button>
+    <button class="button-presentacion" id="especial2">1 L</button>
+    <button class="button-presentacion" id="especial3">1 Kg</button>
+  </div>
+    
+    <table  class="table-detalles">
+           <tr>
+        <th >Peso:</th>
+        <td id="especial1_peso">250 Gr</td>
+        </tr>
+        <tr>
+        <th>Variedad:</th>
+        <td>Especial 1</td>
+      </tr>
+        <th>Sabor:</th> 
+        <td>Sabor Unico y Dulce</td>
+      </tr>
+      <th>Olor</th>
+      <td>Suave</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</dialog>
+
+<dialog id="modal8" class="modal">
+<button id="cerrar-pop-up8" class="cerrar-pop-up">X</button>
+<div class="card-detalles">
+<img id="image8" src="./icons/img/productos/especial2/f1.jpg" alt="" />
+
+<div class="detalles">
+  <h1>Especial 2</h1>
+
+  <h2>Presentación</h2>
+
+  <div class="button-modal">
+  <button class="button-presentacion" id="especial-1">250Gr</button>
+  <button class="button-presentacion" id="especial-2">1 L</button>
+  <button class="button-presentacion" id="especial-3">1 Kg</button>
+</div>
+  <table  class="table-detalles">
+       <tr>
+      <th >Peso:</th>
+      <td id="especial2_peso">250 Gr</td>
+      </tr>
+      <tr>
+      <th>Variedad:</th>
+      <td>Especial 2</td>
+    </tr>
+      <th>Sabor:</th> 
+      <td>Sabor Unico y Dulce</td>
+    </tr>
+    <th>Olor</th>
+    <td>Suave</td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</dialog>
+
+
+    
     <!------------------------------------Sección quienes somos -------------------->
 
-    <section class="container-empresa">
-      <h1 class="title-empresa">¿Quienes Somos?</h1>
+    <section class="container-empresa" id="tittle-empresa">
+      <h1 class="title-empresa" id="tittle-familia">¿Quienes Somos?</h1>
 
       <p class="p-quienes-s">
         Somos una empresa dedicada a la comercialización de café tostado y
@@ -199,9 +643,9 @@
 
     <!---------------------------sección Contacto ----------------->
 
-    <section class="form-contacto">
-      <div class="contacto">
-        <h2>Contactanos</h2>
+    <section class="form-contacto" id="form-contacto">
+      <div class="contacto"><span>
+                <h2>...:::Contactanos:::..</h2>
         <p>
           ¿Tiene alguna consulta o algún comentario para nosotros? Rellene el
           siguiente formulario para ponerse en contacto con nuestro equipo.
@@ -217,11 +661,9 @@
           cols="30"
           rows="10"
         ></textarea>
-
         <button class="button-prymary contacto-enviar">Enviar</button>
-      </div>
+      </span></div>
     </section>
-
 
     <!----------------------------footer------------------ -->
     <footer>
@@ -244,17 +686,23 @@
         /></a>
       </div>
 
-      <div class="redes"><a href="">Café Galileo 2022  &reg;</a></div>
+      <div class="redes"><a href="">Café Galileo 2022 &reg;</a></div>
 
       <div class="dev-juan">
-        <img src="./img/dev-juan.png" alt="" />
+        <img src="./img/dev-juan.png" alt="" /><p>
         Juan Carlos Macias Noguera <br />
         Desarrollador Web <br />
         celular: 3187149192 <br />
         Correo: jcmaciasn@gmail.com <br />
         Skype: :::...::: <br />
-        GitHub: ::..::
+        GitHub: ::..::</p>
       </div>
     </footer>
+
+
+    <script src="index.js"> 
+    
+   </script>
+
   </body>
 </html>
