@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
 
+    <!--link de fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
     <!--media querys responsive site-->
     <link rel="stylesheet" href="responsive.css" />
 
@@ -652,6 +660,21 @@
         Reiciendis iste, saepe quisquam, dicta rerum animi impedit consectetur
         sequi dignissimos quaerat eum! Nam sed deserunt doloribus, omnis
         repudiandae eaque odio sit?
+        <br /><br />
+        Somos una empresa dedicada a la comercialización de café tostado y
+        molido. Fundada por un solido equipo humano con amplia experiencia en el
+        negocio del café. Nuestro café es producido en zonas cafetaleras que
+        ofrecen condiciones ideales para su producción y procesado y producido
+        además en una variedad de microclimas que le confieren aquellas
+        características y cualidades distintivas de cada región. En Cafés León
+        nos regimos por un código de ética y valores que nos caracteriza en la
+        relación con los clientes y colaboradores, manteniendo una profesional
+        relación de confidencialidad. Somos una empresa integral, comprometida
+        con nuestra calidad y con nuestras responsabilidades sociales y medio
+        ambientales. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Reiciendis iste, saepe quisquam, dicta rerum animi impedit consectetur
+        sequi dignissimos quaerat eum! Nam sed deserunt doloribus, omnis
+        repudiandae eaque odio sit?
       </p>
     </section>
     <section class="container-familia">
@@ -692,10 +715,14 @@
             ¿Tiene alguna consulta o algún comentario para nosotros? Rellene el
             siguiente formulario para ponerse en contacto con nuestro equipo.
           </p>
-          <label class="label-form" for="nombre">Nombre</label>
-          <input class="u-input" type="text" placeholder="Ingrese su Nombre" />
-          <label class="label-form" for="e-mail">E-mail</label>
-          <input class="u-input" type="email" placeholder="Ingrese E-mail" />
+          <div class="form__group field">
+            <input required="" placeholder="Name" class="form__field" type="input">
+            <label class="form__label" for="name">Name</label>
+        </div>
+        <div class="form__group field">
+          <input required="" placeholder="Name" class="form__field" type="input">
+          <label class="form__label" for="name">E-mail</label>
+      </div>
           <label class="label-form" for="text">Consulta o comentario?</label>
           <textarea
             name="form-consulta"

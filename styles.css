@@ -1,12 +1,15 @@
 body {
   margin: 0;
   color: rgb(65, 30, 6);
+  font-family: 'Open Sans', sans-serif;
 }
 
 @font-face {
   font-family: font_galileo;
   src: url(fonts/mawns_handwriting/Mawns.ttf);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 .nav-bar {
   display: flex;
@@ -265,11 +268,11 @@ h2 {
 /*Ventana Pop Up detalles producto */
 
 .modal::backdrop {
-  background-color: rgba(68, 13, 13, 0.466);
+  background-color: rgba(41, 54, 33, 0.445);
 }
 .modal {
   border: 0;
-  background-color: rgba(112, 104, 104, 0.911);
+  background-color: rgba(250, 247, 247, 0.911);
   border-radius: 10px;
   height: 75vh;
 }
@@ -285,12 +288,13 @@ h2 {
   text-align: center;
   border: 0;
   color: rgb(19, 56, 14);
+  box-shadow: 0 0 8px rgb(74, 77, 75);
+
 }
 .cerrar-pop-up:hover {
   box-shadow: 0 0 20px rgb(12, 44, 18);
   padding: 0;
-  border: 0;
-  color: rgb(245, 243, 243);
+  color: rgb(231, 15, 15);
   cursor: pointer;
 }
 .card-detalles {
@@ -326,7 +330,7 @@ h2 {
   text-align: center;
   margin: 1%;
   margin-bottom: 1%;
-  color: aliceblue;
+  color: rgb(41, 16, 10);
 }
 .detalles h2 {
   margin-top: 2%;
@@ -336,24 +340,24 @@ h2 {
   justify-content: center;
 }
 .button-presentacion {
-  width: 60px;
-  height: 40px;
+  width: 10vw;
+  height: 6vh;
   cursor: pointer;
   border: none;
-  border-radius: 12%;
+  border-radius: 50%;
   margin-left: 3%;
   margin-bottom: 4%;
-  background: rgb(209, 99, 117);
+  background: rgb(53, 25, 11);
   color: white;
   font-style: italic;
   font-weight: bold;
-  font-size: 80%;
+  font-size: 2vw;
 }
 
 .button-presentacion:hover {
   color: black;
-  box-shadow: 0 0 8px rgb(226, 223, 223);
-  background: rgb(199, 50, 74);
+  box-shadow: 0 0 20px rgb(78, 33, 19);
+  background: rgb(145, 72, 13);
 }
 
 .table-detalles {
@@ -405,6 +409,13 @@ h2 {
   font-family: font_galileo;
 }
 
+.p-quienes-s{
+  margin: auto;
+  width: 81vw;
+}
+
+
+
 .container-empresa {
   height: auto;
   margin-top: 35px;
@@ -432,12 +443,12 @@ h2 {
 }
 .familia img,
 .ubicacion img {
-  width: 60px;
+  width: 10vw;
   margin-bottom: 0px;
 }
 
 .familia {
-  background: rgba(190, 76, 9, 0.61);
+  background: rgba(238, 197, 172, 0.61);
   flex-wrap: wrap;
   max-width: 40%;
   height: 90%;
@@ -460,47 +471,92 @@ h2 {
 .form-contacto {
   background-image: url(img/fondo-c2.jpg);
   background-repeat: no-repeat;
-  background-size: 100% cover;
+  background-size:  cover;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 90vh;
 }
 .contacto {
-  margin-top: 90px;
-  margin-right: 5%;
-  background: rgba(224, 223, 223, 0.644);
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: bold;
+  margin-right: 5vw;
+  background: rgba(135, 135, 182, 0.281);
+  width: 30vw;
+  height: 70vh;
   color: rgb(5, 5, 5);
-  font-size: 16px;
+  font-size: 1.3em;
   border-radius: 8px;
+  justify-content: center;
 }
-.u-input {
+
+/*-----EFECTO INPUT FORM*/
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
   background: transparent;
-  width: 90%;
-  color: white;
-  border-radius: 4px;
-  font-size: 15px;
-  margin-bottom: 15px;
-  border-bottom: 2px solid rgb(248, 245, 245);
+  transition: border-color 0.2s;
 }
-.label-form {
-  padding: 15px;
+
+.form__field::placeholder {
+  color: transparent;
 }
-.contacto-enviar {
-  background: rgb(38, 80, 18);
-  width: 85%;
-  border: 1px solid white;
-  cursor: pointer;
-  margin-bottom: 10px;
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
 }
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #38caef;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+
+
 #consulta {
   width: 80%;
   height: 90px;

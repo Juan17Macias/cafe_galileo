@@ -224,8 +224,9 @@ el hover al enlace y luego la clase de la img*/
   /*Seccion contacto */
 
   .form-contacto {
-    background-image: url(./img/fon-4.jpg);
+   background-image: url(./img/fon-4.jpg);
     background-position: right;
+
   }
   .contacto {
     display: flex;
@@ -245,7 +246,7 @@ el hover al enlace y luego la clase de la img*/
   .contacto::after {
     content: "";
     position: absolute;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     background-image: conic-gradient(
       transparent,
@@ -260,7 +261,7 @@ el hover al enlace y luego la clase de la img*/
   .contacto::before {
     content: "";
     position: absolute;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     background-image: conic-gradient(
       transparent,
@@ -281,7 +282,7 @@ el hover al enlace y luego la clase de la img*/
   .contacto span {
     position: absolute;
     inset: 4px;
-    background: #233a2b;
+    background:  rgb(3, 12, 1);
     border-radius: 16px;
     z-index: 1;
     height: auto;
