@@ -470,25 +470,36 @@ h2 {
 
 .form-contacto {
   background-image: url(img/fondo-c2.jpg);
-  background-repeat: no-repeat;
   background-size:  cover;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   width: 100vw;
   height: 90vh;
 }
 .contacto {
-  margin-right: 5vw;
-  background: rgba(135, 135, 182, 0.281);
+  margin-left: 5vw;
+  background: rgba(41, 40, 40, 0.527);
   width: 30vw;
-  height: 70vh;
-  color: rgb(5, 5, 5);
-  font-size: 1.3em;
+  height: 80vh;
+  color: rgb(236, 232, 232);
   border-radius: 8px;
   justify-content: center;
+}
+
+.contacto span h2{
+  color: white;
+}
+
+.contacto p:nth-child(2){
+  text-align: left;
+  width: 90%;
+  margin: 2vh 5% ;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 0.9vw;
 }
 
 /*-----EFECTO INPUT FORM*/
@@ -496,7 +507,8 @@ h2 {
   position: relative;
   padding: 20px 0 0;
   margin-top: 10px;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .form__field {
@@ -528,7 +540,8 @@ h2 {
   display: block;
   transition: 0.2s;
   font-size: 17px;
-  color: #9b9b9b;
+  color: white;
+  font-weight: bold;
   pointer-events: none;
 }
 
@@ -555,13 +568,29 @@ h2 {
   box-shadow: none;
 }
 
-
+.contacto p:nth-child(5){
+  text-align: center;
+  margin: 2vh 0 ;
+  font-weight: bold;
+}
 
 #consulta {
-  width: 80%;
-  height: 90px;
+  width: 90%;
+  height: 25%;
   border-radius: 9px;
   border: none;
+  margin-left:5% ;
+  resize: none;/* no  deja aumentar el area de texto  manualmente */
+}
+#consulta:focus{
+  outline-color: #38caef;
+}
+
+.contacto-enviar{
+  width: 70%;
+  margin: 5% 15%;
+  height: 6vh;
+  font-size: 1.5vw;
 }
 
 /*_____________________FOOTER___________________________*/
