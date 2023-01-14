@@ -476,30 +476,32 @@ h2 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
 }
 .contacto {
   margin-left: 5vw;
-  background: rgba(41, 40, 40, 0.527);
+  background: rgba(20, 20, 20, 0.719);
   width: 30vw;
-  height: 80vh;
+  height: 75vh;
   color: rgb(236, 232, 232);
   border-radius: 8px;
   justify-content: center;
 }
 
-.contacto span h2{
+.contacto span h2{ 
   color: white;
+  font-size: 2vw;
+
 }
 
 .contacto p:nth-child(2){
-  text-align: left;
+  text-align: center;
   width: 90%;
   margin: 2vh 5% ;
   font-weight: bold;
   font-style: oblique;
-  font-size: 0.9vw;
+  font-size: 1vw;
 }
 
 /*-----EFECTO INPUT FORM*/
@@ -579,7 +581,7 @@ h2 {
   height: 25%;
   border-radius: 9px;
   border: none;
-  margin-left:5% ;
+  margin-left:4% ;
   resize: none;/* no  deja aumentar el area de texto  manualmente */
 }
 #consulta:focus{
@@ -598,7 +600,7 @@ footer {
   background: rgba(15, 15, 15, 0.904);
   border-top: 1px solid rgb(14, 14, 14);
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -606,8 +608,7 @@ footer {
 
 footer img {
   width: 40px;
-  height: 40px;
-  padding: 5px;
+  height: 10vh;
   cursor: pointer;
 }
 footer a img:hover {
@@ -632,14 +633,16 @@ footer a img:hover {
   cursor: pointer;
   display: flex;
   padding: 0;
-  margin-top: 5px;
   font-style: oblique;
+  margin: 0;
 }
 .dev-juan img {
   width: 80px;
-  height: 80px;
   border-radius: 10px;
-  padding: 0 5px 0 0;
-  margin-top: 15px;
   display: block;
+ 
+}
+.info-dev{
+  margin: 0;
+  padding: 0 0 0 10px;
 }
