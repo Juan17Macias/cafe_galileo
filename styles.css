@@ -551,7 +551,7 @@ h2 {
   padding-bottom: 6px;
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, #1b5c1e, #3eef38);
+  border-image: linear-gradient(to right, #1b5c1e, #10df09);
   border-image-slice: 1;
 }
 
@@ -561,7 +561,7 @@ h2 {
   display: block;
   transition: 0.2s;
   font-size: 17px;
-  color: #4def38;
+  color: #369e2a;
   font-weight: 700;
 }
 
@@ -585,7 +585,7 @@ h2 {
   resize: none;/* no  deja aumentar el area de texto  manualmente */
 }
 #consulta:focus{
-  outline-color: #38caef;
+  outline-color: #2ad114;
 }
 
 .contacto-enviar{
