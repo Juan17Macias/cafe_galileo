@@ -443,7 +443,7 @@ h2 {
 }
 .familia img,
 .ubicacion img {
-  width: 10vw;
+  width: 8vw;
   margin-bottom: 0px;
 }
 
@@ -483,7 +483,6 @@ h2 {
   margin-left: 5vw;
   background: rgba(20, 20, 20, 0.719);
   width: 30vw;
-  height: 75vh;
   color: rgb(236, 232, 232);
   border-radius: 8px;
   justify-content: center;
