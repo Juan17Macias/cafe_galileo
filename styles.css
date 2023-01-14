@@ -551,7 +551,7 @@ h2 {
   padding-bottom: 6px;
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image: linear-gradient(to right, #1b5c1e, #3eef38);
   border-image-slice: 1;
 }
 
@@ -561,7 +561,7 @@ h2 {
   display: block;
   transition: 0.2s;
   font-size: 17px;
-  color: #38caef;
+  color: #4def38;
   font-weight: 700;
 }
 
@@ -592,7 +592,7 @@ h2 {
   width: 70%;
   margin: 5% 15%;
   height: 6vh;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
 }
 
 /*_____________________FOOTER___________________________*/

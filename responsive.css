@@ -243,7 +243,8 @@ el hover al enlace y luego la clase de la img*/
     width: 70vw;
     height: 70vh;
   }
-  .contacto::after {
+
+   .contacto::after {
     content: "";
     position: absolute;
     width: 80vw;
@@ -286,6 +287,10 @@ el hover al enlace y luego la clase de la img*/
     border-radius: 16px;
     z-index: 1;
     height: auto;
+      }
+
+  .contacto span h2{
+    font-size: 4vw;
   }
 
   .u-input {
@@ -301,6 +306,10 @@ el hover al enlace y luego la clase de la img*/
     width: 60vw;
     text-align: center;
     margin-left: 7%;
+    font-size: 2vw;
+  }
+  .contacto-enviar{
+    font-size: 3vw;
   }
 
   /*Footer*/
