@@ -94,21 +94,21 @@ updateProduct(
   "image1",
   "./icons/img/productos/tradicional/f1.jfif",
   "tradicional_peso",
-  "250 Gr"
+  " $ 10.000"
 );
 updateProduct(
   "tradicional2",
   "image1",
   "./icons/img/productos/tradicional/f2.jfif",
   "tradicional_peso",
-  "1 Libra"
+  " $ 15.000"
 );
 updateProduct(
   "tradicional3",
   "image1",
   "./icons/img/productos/tradicional/f3.jfif",
   "tradicional_peso",
-  "1 Kg"
+  " $ 30.000"
 );
 // honey
 updateProduct(
@@ -116,21 +116,21 @@ updateProduct(
   "image2",
   "./icons/img/productos/honey/h1.jfif",
   "honey_peso",
-  "250 Gr"
+  " $ 10.000"
 );
 updateProduct(
   "honey2",
   "image2",
   "./icons/img/productos/honey/h2.jfif",
   "honey_peso",
-  "1 Libra"
+  " $ 15.000"
 );
 updateProduct(
   "honey3",
   "image2",
   "./icons/img/productos/honey/h3.png",
   "honey_peso",
-  "1 Kg"
+  " $ 30.000"
 );
 // lavados
 updateProduct(
@@ -138,21 +138,21 @@ updateProduct(
   "image3",
   "./icons/img/productos/lavados/f1.jfif",
   "lavados_peso",
-  "250 Gr"
+  " $ 10.000"
 );
 updateProduct(
   "lavados2",
   "image3",
   "./icons/img/productos/lavados/f2.jfif",
   "lavados_peso",
-  "1 Libra"
+  " $ 15.000"
 );
 updateProduct(
   "lavados3",
   "image3",
   "./icons/img/productos/lavados/f3.jfif",
   "lavados_peso",
-  "1 Kg"
+  " $ 30.000"
 );
 // anaerobicos
 updateProduct(
@@ -160,21 +160,21 @@ updateProduct(
   "image4",
   "./icons/img/productos/anaerobicos/f1.jpg",
   "anaerobicos_peso",
-  "250 Gr"
+  " $ 10.000"
 );
 updateProduct(
   "anaerobicos2",
   "image4",
   "./icons/img/productos/anaerobicos/f2.jfif",
   "anaerobicos_peso",
-  "1 Libra"
+  " $ 15.000"
 );
 updateProduct(
   "anaerobicos3",
   "image4",
   "./icons/img/productos/anaerobicos/f3.jfif",
   "anaerobicos_peso",
-  "1 Kg"
+  " $ 30.000"
 );
 // geisha
 updateProduct(
@@ -182,21 +182,21 @@ updateProduct(
   "image5",
   "./icons/img/productos/geisha/f1.jfif",
   "geisha_peso",
-  "250 Gr"
+  " $ 10.000"
 );
 updateProduct(
   "geisha2",
   "image5",
   "./icons/img/productos/geisha/f2.jfif",
   "geisha_peso",
-  "1 Libra"
+  " $ 15.000"
 );
 updateProduct(
   "geisha3",
   "image5",
   "./icons/img/productos/geisha/f3.jfif",
   "geisha_peso",
-  "1 Kg"
+  " $ 30.000"
 );
 // bourbon
 updateProduct(
@@ -204,21 +204,21 @@ updateProduct(
   "image6",
   "./icons/img/productos/bourbon/f1.jfif",
   "bourbon_peso",
-  "250 Gr"
+  " $ 10.000"
 );
 updateProduct(
   "bourbon2",
   "image6",
   "./icons/img/productos/bourbon/f2.jfif",
   "bourbon_peso",
-  "1 Libra"
+  " $ 15.000"
 );
 updateProduct(
   "bourbon3",
   "image6",
   "./icons/img/productos/bourbon/f3.jfif",
   "bourbon_peso",
-  "1 Kg"
+  " $ 30.000"
 );
 // especial1
 updateProduct(
@@ -226,21 +226,21 @@ updateProduct(
   "image7",
   "./icons/img/productos/especial1/f1.jfif",
   "especial1_peso",
-  "250 Gr"
+  " $ 10.000"
 );
 updateProduct(
   "especial2",
   "image7",
   "./icons/img/productos/especial1/f2.jfif",
   "especial1_peso",
-  "1 Libra"
+  " $ 15.000"
 );
 updateProduct(
   "especial3",
   "image7",
   "./icons/img/productos/especial1/f8.jpg",
   "especial1_peso",
-  "1 Kg"
+  " $ 30.000"
 );
 // especial 2
 updateProduct(
@@ -248,21 +248,21 @@ updateProduct(
   "image8",
   "./icons/img/productos/especial2/f1.jpg",
   "especial2_peso",
-  "250 Gr"
+  " $ 10.000"
 );
 updateProduct(
   "especial-2",
   "image8",
   "./icons/img/productos/especial2/f2.jfif",
   "especial2_peso",
-  "1 Libra"
+  " $ 15.000"
 );
 updateProduct(
   "especial-3",
   "image8",
   "./icons/img/productos/especial2/f3.jfif",
   "especial2_peso",
-  "1 Kg"
+  " $ 30.000"
 );
 
 // Codigo para abrir y cerrar el pop- up

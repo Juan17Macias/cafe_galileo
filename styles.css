@@ -164,6 +164,7 @@ h2 {
   background: transparent;
   border: none;
   outline: none;
+  display: none;
 }
 
 .prev-button {
