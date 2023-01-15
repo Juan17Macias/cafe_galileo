@@ -137,7 +137,7 @@ el hover al enlace y luego la clase de la img*/
   }
 
   .cerrar-pop-up:hover {
-    box-shadow: 0 0 20px rgb(219, 45, 153);
+    box-shadow: 0 0 20px rgb(233, 209, 224);
     color: rgb(219, 45, 153);
   }
   .card-detalles {
@@ -176,7 +176,7 @@ el hover al enlace y luego la clase de la img*/
     height: 40px;
     margin-left: 3%;
     margin-bottom: 4%;
-    background: rgb(209, 99, 117);
+    background: rgb(226, 135, 92);
     color: white;
     font-size: 80%;
   }
@@ -184,7 +184,7 @@ el hover al enlace y luego la clase de la img*/
   .button-presentacion:hover {
     color: black;
     box-shadow: 0 0 8px rgb(226, 223, 223);
-    background: rgb(199, 50, 74);
+    background: rgb(160, 49, 18);
   }
 
   .table-detalles {
@@ -216,6 +216,9 @@ el hover al enlace y luego la clase de la img*/
     margin-bottom: 30px;
     flex-direction: column;
   }
+  .container-familia h2{
+    color: #311407;
+  }
   .familia,
   .ubicacion {
     max-width: 80vw;
@@ -241,7 +244,7 @@ el hover al enlace y luego la clase de la img*/
     position: relative;
     justify-content: center;
     width: 70vw;
-    height: 70vh;
+    height: 80vh;
   }
 
    .contacto::after {
@@ -306,7 +309,7 @@ el hover al enlace y luego la clase de la img*/
     width: 60vw;
     text-align: center;
     margin-left: 7%;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   .contacto-enviar{
     font-size: 3vw;

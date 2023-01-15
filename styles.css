@@ -577,11 +577,11 @@ h2 {
 }
 
 #consulta {
-  width: 90%;
+  width: 88%;
   height: 25%;
   border-radius: 9px;
   border: none;
-  margin-left:4% ;
+  margin-left:3% ;
   resize: none;/* no  deja aumentar el area de texto  manualmente */
 }
 #consulta:focus{
@@ -626,7 +626,9 @@ footer a img:hover {
   color: rgb(238, 245, 219);
   text-decoration: none;
   width: auto;
+  font-weight: bold;
 }
+
 .dev-juan {
   color: white;
   font-size: 12px;
