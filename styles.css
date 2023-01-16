@@ -321,10 +321,6 @@ h2 {
   cursor: pointer;
 }
 
-.detalles {
-  margin-left: 2%;
-  padding: 0 2% 0 2%;
-}
 .detalles h1,
 h2 {
   font-style: oblique;
@@ -379,6 +375,20 @@ h2 {
 }
 .table-detalles th {
   width: 30%; /* Version Mmovil ---para escritorio DISMINUIR */
+}
+.pedido-w{
+  cursor: pointer;
+}
+
+.pedido-w button{
+  background:transparent;
+  border: none;
+}
+.pedido-w img{
+  width: 5vw;
+}
+.pedido-w img:hover{
+  box-shadow: 0 0 15px rgba(46, 235, 9, 0.705);
 }
 
 @media (max-width: 640px) {
