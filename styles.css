@@ -310,7 +310,7 @@ h2 {
 }
 .card-detalles img {
   min-width: 25%;
-  width: 60%;
+  width: 30%;
   height: 90%;
   border-radius: 16px;
   margin-left: 2%;
@@ -321,6 +321,9 @@ h2 {
   cursor: pointer;
 }
 
+.detalles {
+  width: 80vw;
+}
 .detalles h1,
 h2 {
   font-style: oblique;
@@ -378,6 +381,7 @@ h2 {
 }
 .pedido-w{
   cursor: pointer;
+  padding: 0;
 }
 
 .pedido-w button{
@@ -385,7 +389,7 @@ h2 {
   border: none;
 }
 .pedido-w img{
-  width: 5vw;
+  width: 8vw;
 }
 .pedido-w img:hover{
   box-shadow: 0 0 15px rgba(46, 235, 9, 0.705);
