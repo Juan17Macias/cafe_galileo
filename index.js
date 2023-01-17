@@ -271,7 +271,7 @@ const manejarModal = (numModal) => {
   const abrirPopUp = document.querySelector(`.abrir-pop-up${numModal}`);
   const cerrarPopUp = document.querySelector(`.cerrar-pop-up${numModal}`);
   const modal = document.querySelector(`.modal${numModal}`);
-  
+
   // Agregar evento click al botón para abrir el modal
   abrirPopUp.addEventListener("click", () => modal.showModal());
 
@@ -299,16 +299,20 @@ imgs.forEach((img) => {
   });
 });
 
-
-
-
-
-
 //  CODIGO PARA ENVIAR SOLICITUD DE PRODUCTO
-
-document.querySelectorAll(".pedido-w").forEach(function (elem) {
+/* document.querySelectorAll(".pedido-w").forEach(function (elem) {
   elem.addEventListener("click", function () {
     var url = this.getAttribute("data-url");
     window.open(url, "_blank");
+  });
+}); */
+
+document.querySelectorAll('.pedido-w').forEach(function(elem) {
+  elem.addEventListener('click', function() {
+    var variety = document.getElementById('variedad').innerHTML;
+    var price = document.getElementById('tradicional_peso').innerHTML;
+    var message = "Hola, quiero realizar un pedido de Café. Variedad: " + variety + " Precio: " + price;
+    var url = this.getAttribute('data-url')  + message;
+        window.open(url, '_blank');
   });
 });
