@@ -80,6 +80,8 @@ prevButton.addEventListener("click", function () {
   intervalId = setInterval(showNextImage, intervalDuration);
 });
 
+
+
 // Codigo para modificar  la imagen, peso y precio  dependiendo del tipo de producto
 
 function updateProduct(buttonId, imageId, imageSrc, tablaId, weightText) {
@@ -267,110 +269,28 @@ updateProduct(
 
 // Codigo para abrir y cerrar el pop- up
 
-const abrirPopUp = document.getElementById("abrir-pop-up");
-const cerrarPopUp = document.getElementById("cerrar-pop-up");
-const modal = document.getElementById("modal");
+const manejarModal = (numModal) => {
+  const abrirPopUp = document.querySelector(`.abrir-pop-up${numModal}`);
+  const cerrarPopUp = document.querySelector(`.cerrar-pop-up${numModal}`);
+  const modal = document.querySelector(`.modal${numModal}`);
 
-abrirPopUp.addEventListener("click", () => {
-  modal.showModal();
-});
-cerrarPopUp.addEventListener("click", () => {
-  modal.close();
-});
+  abrirPopUp.addEventListener("click", () => modal.showModal());
+  cerrarPopUp.addEventListener("click", () => modal.close());
+};
 
-// segundo modal
-
-const abrirPopUp2 = document.getElementById("abrir-pop-up2");
-const cerrarPopUp2 = document.getElementById("cerrar-pop-up2");
-const modal2 = document.getElementById("modal2");
-
-abrirPopUp2.addEventListener("click", () => {
-  modal2.showModal();
-});
-cerrarPopUp2.addEventListener("click", () => {
-  modal2.close();
-});
-
-// tercer modal
-
-const abrirPopUp3 = document.getElementById("abrir-pop-up3");
-const cerrarPopUp3 = document.getElementById("cerrar-pop-up3");
-const modal3 = document.getElementById("modal3");
-
-abrirPopUp3.addEventListener("click", () => {
-  modal3.showModal();
-});
-cerrarPopUp3.addEventListener("click", () => {
-  modal3.close();
-});
-
-//  cuarto modal
-
-const abrirPopUp4 = document.getElementById("abrir-pop-up4");
-const cerrarPopUp4 = document.getElementById("cerrar-pop-up4");
-const modal4 = document.getElementById("modal4");
-
-abrirPopUp4.addEventListener("click", () => {
-  modal4.showModal();
-});
-cerrarPopUp4.addEventListener("click", () => {
-  modal4.close();
-});
-
-//quinto modal
-
-const abrirPopUp5 = document.getElementById("abrir-pop-up5");
-const cerrarPopUp5 = document.getElementById("cerrar-pop-up5");
-const modal5 = document.getElementById("modal5");
-
-abrirPopUp5.addEventListener("click", () => {
-  modal5.showModal();
-});
-cerrarPopUp5.addEventListener("click", () => {
-  modal5.close();
-});
-
-// sexto modal
-
-const abrirPopUp6 = document.getElementById("abrir-pop-up6");
-const cerrarPopUp6 = document.getElementById("cerrar-pop-up6");
-const modal6 = document.getElementById("modal6");
-
-abrirPopUp6.addEventListener("click", () => {
-  modal6.showModal();
-});
-cerrarPopUp6.addEventListener("click", () => {
-  modal6.close();
-});
-
-// septimo modal
-
-const abrirPopUp7 = document.getElementById("abrir-pop-up7");
-const cerrarPopUp7 = document.getElementById("cerrar-pop-up7");
-const modal7 = document.getElementById("modal7");
-
-abrirPopUp7.addEventListener("click", () => {
-  modal7.showModal();
-});
-cerrarPopUp7.addEventListener("click", () => {
-  modal7.close();
-});
-
-//  Octavo modal
-
-const abrirPopUp8 = document.getElementById("abrir-pop-up8");
-const cerrarPopUp8 = document.getElementById("cerrar-pop-up8");
-const modal8 = document.getElementById("modal8");
-
-abrirPopUp8.addEventListener("click", () => {
-  modal8.showModal();
-});
-cerrarPopUp8.addEventListener("click", () => {
-  modal8.close();
-});
+manejarModal(1);
+manejarModal(2);
+manejarModal(3);
+manejarModal(4);
+manejarModal(5);
+manejarModal(6);
+manejarModal(7);
+manejarModal(8);
+// si se Agregan mas dialog o modal se llama una vez mas 
 
 
 //  CODIGO PARA ENVIAR SOLICITUD DE PRODUCTO 
+
 document.querySelector('.pedido-w').addEventListener('click', function() {
   var url = this.getAttribute('data-url');
   window.open(url, '_blank');

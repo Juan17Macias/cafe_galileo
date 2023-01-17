@@ -216,12 +216,13 @@ el hover al enlace y luego la clase de la img*/
     display: block;
     position: absolute;
     margin-top: -10vh;
+    margin-left: 28%;
   }
   .pedido-w{
     font: 3vw "Margarine", sans-serif;
          }
   .button-parrot .parrot:before{
-    margin-left: -8vw;
+    margin-left: -7vw;
   }
   .pedido-w img{
     width: 20vw;
