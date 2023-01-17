@@ -311,7 +311,7 @@ document.querySelectorAll('.pedido-w').forEach(function(elem) {
   elem.addEventListener('click', function() {
     var variety = document.getElementById('variedad').innerHTML;
     var price = document.getElementById('tradicional_peso').innerHTML;
-    var message = "Hola, quiero realizar un pedido de Café. Variedad: " + variety + " Precio: " + price;
+    var message = "Hola, quiero realizar un pedido de Café Variedad: " + variety + " Precio: " + price;
     var url = this.getAttribute('data-url')  + message;
         window.open(url, '_blank');
   });
