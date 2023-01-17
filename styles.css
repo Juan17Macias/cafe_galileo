@@ -316,7 +316,7 @@ h2 {
   margin-left: 2%;
 }
 
-.card-detalles img:hover {
+.card-detalles > img:first-of-type:hover{
   box-shadow: 0 0 15px rgba(235, 137, 137, 0.719);
   cursor: pointer;
 }
@@ -379,21 +379,51 @@ h2 {
 .table-detalles th {
   width: 30%; /* Version Mmovil ---para escritorio DISMINUIR */
 }
-.pedido-w{
-  cursor: pointer;
-  padding: 0;
-}
-
-.pedido-w button{
-  background:transparent;
-  border: none;
-}
 .pedido-w img{
   width: 8vw;
 }
-.pedido-w img:hover{
-  box-shadow: 0 0 15px rgba(46, 235, 9, 0.705);
+
+/*EFECTOS BOTON PEDIDOS WHATSAPP*/
+
+.pedido-w {
+  background: transparent;
+  border: none;
+  padding: 0.8rem 2rem;
+  font: 1vw "Margarine", sans-serif;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  
 }
+
+
+.button-parrot .parrot {
+  position: absolute;
+  width: 50px;
+  text-align: center;
+  animation: blink 0.8s infinite;
+  color:transparent;
+  
+}
+
+.button-parrot .parrot:before {
+  content: "¡Realizar pedido!";
+}
+
+
+@keyframes blink {
+  25%, 75% {
+    color: rgba(52, 122, 34, 0.5);
+  }
+
+  40%, 60% {
+    color: rgb(214, 139, 27);
+  }
+}
+
 
 @media (max-width: 640px) {
   .cards-container {
