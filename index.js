@@ -368,3 +368,10 @@ abrirPopUp8.addEventListener("click", () => {
 cerrarPopUp8.addEventListener("click", () => {
   modal8.close();
 });
+
+
+//  CODIGO PARA ENVIAR SOLICITUD DE PRODUCTO 
+document.querySelector('.pedido-w').addEventListener('click', function() {
+  var url = this.getAttribute('data-url');
+  window.open(url, '_blank');
+});
