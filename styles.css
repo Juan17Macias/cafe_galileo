@@ -1,7 +1,7 @@
 body {
   margin: 0;
   color: rgb(65, 30, 6);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 @font-face {
@@ -9,7 +9,7 @@ body {
   src: url(fonts/mawns_handwriting/Mawns.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 .nav-bar {
   display: flex;
@@ -290,7 +290,6 @@ h2 {
   border: 0;
   color: rgb(19, 56, 14);
   box-shadow: 0 0 8px rgb(74, 77, 75);
-
 }
 .cerrar-pop-up:hover {
   box-shadow: 0 0 20px rgb(12, 44, 18);
@@ -316,7 +315,7 @@ h2 {
   margin-left: 2%;
 }
 
-.card-detalles > img:first-of-type:hover{
+.card-detalles > img:first-of-type:hover {
   box-shadow: 0 0 15px rgba(235, 137, 137, 0.719);
   cursor: pointer;
 }
@@ -380,10 +379,10 @@ h2 {
   width: 30%; /* Version Mmovil ---para escritorio DISMINUIR */
 }
 
-.item2{
+.item2 {
   display: none;
 }
-.pedido-w img{
+.pedido-w img {
   width: 10vw;
 }
 
@@ -400,32 +399,30 @@ h2 {
   transition: 0.2s ease-in-out;
   letter-spacing: 2px;
   white-space: nowrap;
-  
 }
-
 
 .button-parrot .parrot {
   position: absolute;
   width: 50px;
   text-align: center;
   animation: blink 0.8s infinite;
-  color:transparent;
-  
+  color: transparent;
 }
 .button-parrot .parrot:before {
   content: "¡Realizar pedido!";
 }
 
 @keyframes blink {
-  25%, 75% {
+  25%,
+  75% {
     color: rgba(52, 122, 34, 0.5);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     color: rgb(214, 139, 27);
   }
 }
-
 
 @media (max-width: 640px) {
   .cards-container {
@@ -456,12 +453,10 @@ h2 {
   font-family: font_galileo;
 }
 
-.p-quienes-s{
+.p-quienes-s {
   margin: auto;
   width: 81vw;
 }
-
-
 
 .container-empresa {
   height: auto;
@@ -517,7 +512,7 @@ h2 {
 
 .form-contacto {
   background-image: url(img/fondo-c2.jpg);
-  background-size:  cover;
+  background-size: cover;
   margin: 0;
   padding: 0;
   display: flex;
@@ -535,16 +530,15 @@ h2 {
   justify-content: center;
 }
 
-.contacto span h2{ 
+.contacto span h2 {
   color: white;
   font-size: 2vw;
-
 }
 
-.contacto p:nth-child(2){
+.contacto p:nth-child(2) {
   text-align: center;
   width: 90%;
-  margin: 2vh 5% ;
+  margin: 2vh 5%;
   font-weight: bold;
   font-style: oblique;
   font-size: 1vw;
@@ -612,13 +606,14 @@ h2 {
 }
 
 /* reset input */
-.form__field:required, .form__field:invalid {
+.form__field:required,
+.form__field:invalid {
   box-shadow: none;
 }
 
-.contacto p:nth-child(5){
+.contacto p:nth-child(5) {
   text-align: center;
-  margin: 2vh 0 ;
+  margin: 2vh 0;
   font-weight: bold;
 }
 
@@ -627,14 +622,14 @@ h2 {
   height: 25%;
   border-radius: 9px;
   border: none;
-  margin-left:3% ;
-  resize: none;/* no  deja aumentar el area de texto  manualmente */
+  margin-left: 3%;
+  resize: none; /* no  deja aumentar el area de texto  manualmente */
 }
-#consulta:focus{
+#consulta:focus {
   outline-color: #2ad114;
 }
 
-.contacto-enviar{
+.contacto-enviar {
   width: 70%;
   margin: 5% 15%;
   height: 6vh;
@@ -688,9 +683,8 @@ footer a img:hover {
   width: 80px;
   border-radius: 10px;
   display: block;
- 
 }
-.info-dev{
+.info-dev {
   margin: 0;
   padding: 0 0 0 10px;
 }

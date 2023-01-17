@@ -180,7 +180,6 @@ el hover al enlace y luego la clase de la img*/
     color: white;
     font-size: 80%;
     white-space: nowrap;
-
   }
 
   .button-presentacion:hover {
@@ -207,32 +206,26 @@ el hover al enlace y luego la clase de la img*/
   .table-detalles th {
     width: 40%; /* Version Mmovil ---para escritorio DISMINUIR */
   }
-   /*BOTON PEDIDOS*/
+  /*BOTON PEDIDOS*/
 
-  .item{
+  .item {
     display: none;
   }
-  .item2{
+  .item2 {
     display: block;
     position: absolute;
     margin-top: -10vh;
     margin-left: 28%;
   }
-  .pedido-w{
+  .pedido-w {
     font: 3vw "Margarine", sans-serif;
-         }
-  .button-parrot .parrot:before{
+  }
+  .button-parrot .parrot:before {
     margin-left: -7vw;
   }
-  .pedido-w img{
+  .pedido-w img {
     width: 20vw;
   }
-
-
-
-
-
-
 
   /*Seccion familia*/
   .container-familia {
@@ -244,7 +237,7 @@ el hover al enlace y luego la clase de la img*/
     margin-bottom: 30px;
     flex-direction: column;
   }
-  .container-familia h2{
+  .container-familia h2 {
     color: #311407;
   }
   .familia,
@@ -255,9 +248,8 @@ el hover al enlace y luego la clase de la img*/
   /*Seccion contacto */
 
   .form-contacto {
-   background-image: url(./img/fon-4.jpg);
+    background-image: url(./img/fon-4.jpg);
     background-position: right;
-
   }
   .contacto {
     display: flex;
@@ -275,7 +267,7 @@ el hover al enlace y luego la clase de la img*/
     height: 70vh;
   }
 
-   .contacto::after {
+  .contacto::after {
     content: "";
     position: absolute;
     width: 80vw;
@@ -314,13 +306,13 @@ el hover al enlace y luego la clase de la img*/
   .contacto span {
     position: absolute;
     inset: 4px;
-    background:  rgb(3, 12, 1);
+    background: rgb(3, 12, 1);
     border-radius: 16px;
     z-index: 1;
     height: auto;
-      }
+  }
 
-  .contacto span h2{
+  .contacto span h2 {
     font-size: 4vw;
   }
 
@@ -339,7 +331,7 @@ el hover al enlace y luego la clase de la img*/
     margin-left: 7%;
     font-size: 2.5vw;
   }
-  .contacto-enviar{
+  .contacto-enviar {
     font-size: 3vw;
   }
 

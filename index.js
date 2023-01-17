@@ -80,8 +80,6 @@ prevButton.addEventListener("click", function () {
   intervalId = setInterval(showNextImage, intervalDuration);
 });
 
-
-
 // Codigo para modificar  la imagen, peso y precio  dependiendo del tipo de producto
 
 function updateProduct(buttonId, imageId, imageSrc, tablaId, weightText) {
@@ -273,11 +271,15 @@ const manejarModal = (numModal) => {
   const abrirPopUp = document.querySelector(`.abrir-pop-up${numModal}`);
   const cerrarPopUp = document.querySelector(`.cerrar-pop-up${numModal}`);
   const modal = document.querySelector(`.modal${numModal}`);
-
+  
+  // Agregar evento click al botón para abrir el modal
   abrirPopUp.addEventListener("click", () => modal.showModal());
+
+  // Agregar evento click al botón para cerrar el modal
   cerrarPopUp.addEventListener("click", () => modal.close());
 };
 
+// Llamar la función para manejar cada modal
 manejarModal(1);
 manejarModal(2);
 manejarModal(3);
@@ -286,16 +288,27 @@ manejarModal(5);
 manejarModal(6);
 manejarModal(7);
 manejarModal(8);
-// si se Agregan mas dialog o modal se llama una vez mas 
 
-
-//  CODIGO PARA ENVIAR SOLICITUD DE PRODUCTO 
-
-document.querySelectorAll('.pedido-w').forEach(function(elem) {
-  elem.addEventListener('click', function() {
-    var url = this.getAttribute('data-url');
-    window.open(url, '_blank');
+// Agregar evento click a las imágenes para abrir los modales
+const imgs = document.querySelectorAll(".abrir-modal");
+imgs.forEach((img) => {
+  img.addEventListener("click", () => {
+    const numModal = img.getAttribute("data-modal");
+    const modal = document.querySelector(`.modal${numModal}`);
+    modal.showModal();
   });
 });
 
 
+
+
+
+
+//  CODIGO PARA ENVIAR SOLICITUD DE PRODUCTO
+
+document.querySelectorAll(".pedido-w").forEach(function (elem) {
+  elem.addEventListener("click", function () {
+    var url = this.getAttribute("data-url");
+    window.open(url, "_blank");
+  });
+});
