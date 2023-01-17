@@ -291,7 +291,11 @@ manejarModal(8);
 
 //  CODIGO PARA ENVIAR SOLICITUD DE PRODUCTO 
 
-document.querySelector('.pedido-w').addEventListener('click', function() {
-  var url = this.getAttribute('data-url');
-  window.open(url, '_blank');
+document.querySelectorAll('.pedido-w').forEach(function(elem) {
+  elem.addEventListener('click', function() {
+    var url = this.getAttribute('data-url');
+    window.open(url, '_blank');
+  });
 });
+
+
