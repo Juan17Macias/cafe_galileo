@@ -379,6 +379,10 @@ h2 {
 .table-detalles th {
   width: 30%; /* Version Mmovil ---para escritorio DISMINUIR */
 }
+
+.item2{
+  display: none;
+}
 .pedido-w img{
   width: 10vw;
 }

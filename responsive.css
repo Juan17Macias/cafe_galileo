@@ -179,6 +179,8 @@ el hover al enlace y luego la clase de la img*/
     background: rgb(226, 135, 92);
     color: white;
     font-size: 80%;
+    white-space: nowrap;
+
   }
 
   .button-presentacion:hover {
@@ -205,6 +207,31 @@ el hover al enlace y luego la clase de la img*/
   .table-detalles th {
     width: 40%; /* Version Mmovil ---para escritorio DISMINUIR */
   }
+   /*BOTON PEDIDOS*/
+
+  .item{
+    display: none;
+  }
+  .item2{
+    display: block;
+    position: absolute;
+    margin-top: -10vh;
+  }
+  .pedido-w{
+    font: 3vw "Margarine", sans-serif;
+         }
+  .button-parrot .parrot:before{
+    margin-left: -8vw;
+  }
+  .pedido-w img{
+    width: 20vw;
+  }
+
+
+
+
+
+
 
   /*Seccion familia*/
   .container-familia {
