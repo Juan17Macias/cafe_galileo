@@ -380,7 +380,7 @@ h2 {
   width: 30%; /* Version Mmovil ---para escritorio DISMINUIR */
 }
 .pedido-w img{
-  width: 8vw;
+  width: 10vw;
 }
 
 /*EFECTOS BOTON PEDIDOS WHATSAPP*/
@@ -408,11 +408,9 @@ h2 {
   color:transparent;
   
 }
-
 .button-parrot .parrot:before {
   content: "¡Realizar pedido!";
 }
-
 
 @keyframes blink {
   25%, 75% {
