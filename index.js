@@ -299,20 +299,48 @@ imgs.forEach((img) => {
   });
 });
 
-//  CODIGO PARA ENVIAR SOLICITUD DE PRODUCTO
-/* document.querySelectorAll(".pedido-w").forEach(function (elem) {
-  elem.addEventListener("click", function () {
-    var url = this.getAttribute("data-url");
-    window.open(url, "_blank");
-  });
-}); */
 
-document.querySelectorAll('.pedido-w').forEach(function(elem) {
+//CAPTURANDO EL VALOR DE BUTTON PRESENTACION PARA AGREGARLO AL MENSAJE 
+/* document.querySelectorAll('.button-presentacion').forEach(function(elem) {
+  elem.addEventListener('click', function() {
+    var presentation = this.innerHTML;
+  });
+});
+//  CODIGO PARA ENVIAR SOLICITUD DE PRODUCTO
+
+/* document.querySelectorAll('.pedido-w').forEach(function(elem) {
   elem.addEventListener('click', function() {
     var variety = document.getElementById('variedad').innerHTML;
     var price = document.getElementById('tradicional_peso').innerHTML;
     var message = "Hola, quiero realizar un pedido de Café Variedad: " + variety + " Precio: " + price;
     var url = this.getAttribute('data-url')  + message;
         window.open(url, '_blank');
+  });
+}); */
+
+/* document.querySelectorAll('.pedido-w').forEach(function(elem) {
+  elem.addEventListener('click', function() {
+    var variety = this.closest(".modal").querySelector('.variedad').innerHTML;
+    var flavor = this.closest(".modal").querySelector('.sabor').innerHTML;
+    var message = "Hola, quiero realizar un pedido de Café, Variedad: " + variety + " Sabor: " + flavor;
+    var url = this.getAttribute('data-url')  + message;
+    window.open(url, '_blank');
+  });
+}); */
+
+var presentation = document.querySelector('.button-presentacion').innerHTML;
+document.querySelectorAll('.button-presentacion').forEach(function(elem) {
+  elem.addEventListener('click', function() {
+    presentation = this.innerHTML;
+  });
+});
+
+document.querySelectorAll('.pedido-w').forEach(function(elem) {
+  elem.addEventListener('click', function() {
+    var variety = this.closest(".modal").querySelector('.variedad').innerHTML;
+    var flavor = this.closest(".modal").querySelector('.sabor').innerHTML;
+    var message = "Hola, quiero realizar un pedido de Café,  Variedad: " + variety + " - Presentacion: "+ (presentation ? presentation : "250 Gr")+ " - Sabor: " + flavor ;
+    var url = this.getAttribute('data-url')  + message;
+    window.open(url, '_blank');
   });
 });
