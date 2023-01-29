@@ -265,6 +265,7 @@ el hover al enlace y luego la clase de la img*/
     justify-content: center;
     width: 70vw;
     height: 70vh;
+    min-height: 70vh;
   }
 
   .contacto::after {
@@ -349,6 +350,7 @@ el hover al enlace y luego la clase de la img*/
     flex-direction: row;
     color: black;
     font-style: oblique;
+    margin-bottom: 1px;
   }
 
   .footer-logo img {
@@ -364,7 +366,7 @@ el hover al enlace y luego la clase de la img*/
   }
 
   .dev-juan img {
-    width: 10vw;
+    width: 15vw;
     height:8vh;
     border-radius: 10px;
     margin: 0;
