@@ -667,8 +667,10 @@ footer img:hover {
   text-decoration: none;
   font-style: oblique;
   font-family: math;
-  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
   font-size: small;
+  margin-bottom: 4px;
 }
 .footer-logo img {
   width: 10vw;

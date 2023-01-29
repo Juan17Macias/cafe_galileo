@@ -347,10 +347,8 @@ el hover al enlace y luego la clase de la img*/
   .redes a {
     font-size: 0.4rem;
     display: flex;
-    flex-direction: row;
-    color: black;
-    font-style: oblique;
-    margin-bottom: 1px;
+    align-items: center;
+    margin-bottom: 3;
   }
 
   .footer-logo img {
