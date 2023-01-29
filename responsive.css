@@ -55,15 +55,14 @@
   .menu-mobile {
     position: absolute;
     width: 50vw;
-    height: auto;
+    height: 100vh;
     background-color: rgba(240, 248, 255, 0.96);
     border-radius: 10px;
     text-align: start;
     display: flex;
-    flex-direction: row;
-    display: none;
-    margin-top: 3vh;
-    margin-left: -1vw;
+    margin-top: 1vh;
+    margin-left: -2.3vw;
+
   }
 
   .menu-mobile ul {
@@ -337,19 +336,23 @@ el hover al enlace y luego la clase de la img*/
 
   /*Footer*/
   footer {
-    background: rgb(230, 238, 229);
-    height: 10vh;
+    height: 20vh;
   }
   footer img {
-    width: 5vw;
-    height: 5vh;
+    width: 2vw;
+    height: 2vh;
   }
   .redes a {
-    font-size: 1rem;
+    font-size: 0.7rem;
     display: flex;
     flex-direction: row;
     color: black;
     font-style: oblique;
+  }
+
+  .footer-logo img {
+    width: 16vw;
+    height: 10vh;
   }
   .dev-juan p {
     display: none;
@@ -360,8 +363,8 @@ el hover al enlace y luego la clase de la img*/
   }
 
   .dev-juan img {
-    width: 7vw;
-    height: 5vh;
+    width: 10vw;
+    height:8vh;
     border-radius: 10px;
     margin: 0;
   }
