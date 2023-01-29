@@ -62,6 +62,7 @@
     display: flex;
     margin-top: 1vh;
     margin-left: -2.3vw;
+    display: none;
 
   }
 
@@ -343,7 +344,7 @@ el hover al enlace y luego la clase de la img*/
     height: 2vh;
   }
   .redes a {
-    font-size: 0.7rem;
+    font-size: 0.4rem;
     display: flex;
     flex-direction: row;
     color: black;
@@ -351,8 +352,8 @@ el hover al enlace y luego la clase de la img*/
   }
 
   .footer-logo img {
-    width: 16vw;
-    height: 10vh;
+    width: 18vw;
+    height: 12vh;
   }
   .dev-juan p {
     display: none;
