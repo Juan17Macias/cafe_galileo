@@ -63,6 +63,8 @@
     margin-top: 1vh;
     margin-left: -2.3vw;
     display: none;
+    line-height: 6vh;
+    z-index: -1;
 
   }
 
@@ -352,8 +354,8 @@ el hover al enlace y luego la clase de la img*/
   }
 
   .footer-logo img {
-    width: 18vw;
-    height: 12vh;
+    width: 15vw;
+    height: 11vh;
   }
   .dev-juan p {
     display: none;
